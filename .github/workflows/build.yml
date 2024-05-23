@@ -1,5 +1,5 @@
 # module du helios launcher
-name: Launcher Build
+name: uild
 on:
   push:
     branches: [ master ]
@@ -25,7 +25,7 @@ jobs:
           draft: false
           prerelease: ${{ contains(env.version, 'beta') || contains(env.version, 'alpha') }}
 
-  build-launcher:
+  build:
     needs: create-release
     runs-on: ${{ matrix.os }}
 
