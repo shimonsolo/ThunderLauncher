@@ -4,7 +4,7 @@
 title = "Thunder Launcher"
 
 [ejs.landing]
-mediaGitHubURL = "#"
+mediaGitHubURL = "https://thunderstudio.vercel.com"
 mediaTwitterURL = "https://x.com/ThunderStudio_"
 mediaInstagramURL = "#"
 mediaYouTubeURL = "https://www.youtube.com/@thunderstudio_"

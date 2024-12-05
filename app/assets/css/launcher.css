@@ -3101,7 +3101,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsTooltip {
     visibility: hidden;
     opacity: 0;
-    width: 75px;
+    width: 83px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
