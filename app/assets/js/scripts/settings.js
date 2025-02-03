@@ -1181,11 +1181,11 @@ settingsMinRAMRange.onchange = (e) => {
         const sliderMeta = calculateRangeSliderMeta(settingsMaxRAMRange)
         updateRangedSlider(settingsMaxRAMRange, sMinV,
             ((sMinV-sliderMeta.min)/sliderMeta.step)*sliderMeta.inc)
-        settingsMaxRAMLabel.innerHTML = sMinV.toFixed(1) + 'G'
+        settingsMaxRAMLabel.innerHTML = sMinV.toFixed(1) + 'GB'
     }
 
     // Update label
-    settingsMinRAMLabel.innerHTML = sMinV.toFixed(1) + 'G'
+    settingsMinRAMLabel.innerHTML = sMinV.toFixed(1) + 'GB'
 }
 
 // Bind on change event for max memory container.
@@ -1213,9 +1213,9 @@ settingsMaxRAMRange.onchange = (e) => {
         const sliderMeta = calculateRangeSliderMeta(settingsMaxRAMRange)
         updateRangedSlider(settingsMinRAMRange, sMaxV,
             ((sMaxV-sliderMeta.min)/sliderMeta.step)*sliderMeta.inc)
-        settingsMinRAMLabel.innerHTML = sMaxV.toFixed(1) + 'G'
+        settingsMinRAMLabel.innerHTML = sMaxV.toFixed(1) + 'GB'
     }
-    settingsMaxRAMLabel.innerHTML = sMaxV.toFixed(1) + 'G'
+    settingsMaxRAMLabel.innerHTML = sMaxV.toFixed(1) + 'GB'
 }
 
 /**
@@ -1325,8 +1325,8 @@ function updateRangedSlider(element, value, notch){
  * Display the total and available RAM.
  */
 function populateMemoryStatus(){
-    settingsMemoryTotal.innerHTML = Number((os.totalmem()-1073741824)/1073741824).toFixed(1) + 'G'
-    settingsMemoryAvail.innerHTML = Number(os.freemem()/1073741824).toFixed(1) + 'G'
+    settingsMemoryTotal.innerHTML = Number((os.totalmem()-1073741824)/1073741824).toFixed(1) + 'GB'
+    settingsMemoryAvail.innerHTML = Number(os.freemem()/1073741824).toFixed(1) + 'GB'
 }
 
 /**
